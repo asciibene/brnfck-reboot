@@ -1,3 +1,4 @@
+#Brainfuck interpreter 
 import sys
 
 class Brnfck():
@@ -100,11 +101,12 @@ class Brnfck():
 
         # print the program's output
         print("%s" % (opt))
+        # TODO print execution time
 
 if __name__ == "__main__":
     if len(sys.argv) == 1:
         print("================ brnfck v.0.1 ================")
         print("USAGE: python brnfck.py \"<program>\" [\"<input>\"]")
-    else:
+    elif len(sys.argv) == 3:
         bf = Brnfck(30)
         bf.run(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else "")
