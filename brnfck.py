@@ -1,4 +1,4 @@
-#Brainfuck interpreter 
+#Brainfuck interpreter -- ascii bene
 import sys
 
 class Brnfck():
